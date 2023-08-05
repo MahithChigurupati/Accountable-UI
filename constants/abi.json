@@ -1,0 +1,338 @@
+[
+    {
+        "type": "constructor",
+        "inputs": [
+            {
+                "name": "_tokenAddresses",
+                "type": "address[]",
+                "baseType": "array",
+                "components": null,
+                "arrayLength": -1,
+                "arrayChildren": {
+                    "name": "",
+                    "type": "address",
+                    "baseType": "address",
+                    "components": null,
+                    "arrayLength": null,
+                    "arrayChildren": null
+                }
+            },
+            {
+                "name": "_priceFeedAddresses",
+                "type": "address[]",
+                "baseType": "array",
+                "components": null,
+                "arrayLength": -1,
+                "arrayChildren": {
+                    "name": "",
+                    "type": "address",
+                    "baseType": "address",
+                    "components": null,
+                    "arrayLength": null,
+                    "arrayChildren": null
+                }
+            },
+            {
+                "name": "_priceFeedAddressOfcurrentChain",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "error",
+        "inputs": [],
+        "name": "AccountableFactory__CountOfTokenAddressesAndPriceFeedAddressesDontMatch"
+    },
+    { "type": "error", "inputs": [], "name": "AccountableFactory__PriceFeedAddressesCantBeZero" },
+    { "type": "error", "inputs": [], "name": "OracleLib__StalePrice" },
+    {
+        "type": "event",
+        "inputs": [
+            {
+                "name": "previousOwner",
+                "type": "address",
+                "baseType": "address",
+                "indexed": true,
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            },
+            {
+                "name": "newOwner",
+                "type": "address",
+                "baseType": "address",
+                "indexed": true,
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "anonymous": false
+    },
+    {
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_tokenAddress",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            },
+            {
+                "name": "_tokenPriceFeedAddress",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "name": "addTokenSupport",
+        "constant": false,
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_title",
+                "type": "string",
+                "baseType": "string",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            },
+            {
+                "name": "_numberOfParticipatingParties",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            },
+            {
+                "name": "_participationStake",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "name": "createAgreement",
+        "constant": false,
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_user",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "name": "getCreatedagreements",
+        "constant": true,
+        "outputs": [],
+        "stateMutability": "view",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_amount",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "name": "getEthPriceFromUsd",
+        "constant": true,
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "stateMutability": "view",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "getNativeChainPriceFeed",
+        "constant": true,
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "stateMutability": "view",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_token",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "name": "getTokenPriceFeed",
+        "constant": true,
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "stateMutability": "view",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_tokenAddress",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            },
+            {
+                "name": "_amount",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "name": "getTokenPriceFromUsd",
+        "constant": true,
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256",
+                "baseType": "uint256",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "stateMutability": "view",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "owner",
+        "constant": true,
+        "outputs": [
+            {
+                "name": "",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "stateMutability": "view",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [],
+        "name": "renounceOwnership",
+        "constant": false,
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [
+            {
+                "name": "_taskAutomationContract",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "name": "setTaskAutomationContractAddress",
+        "constant": false,
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "payable": false,
+        "gas": null
+    },
+    {
+        "type": "function",
+        "inputs": [
+            {
+                "name": "newOwner",
+                "type": "address",
+                "baseType": "address",
+                "components": null,
+                "arrayLength": null,
+                "arrayChildren": null
+            }
+        ],
+        "name": "transferOwnership",
+        "constant": false,
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "payable": false,
+        "gas": null
+    }
+]

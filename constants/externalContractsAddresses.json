@@ -1,0 +1,8 @@
+{
+    "1337": {
+        "linkToken": "0xdd13E55209Fd76AfE204dBda4007C227904f0a81",
+        "keeperRegistrar": "0x694AA1769357215DE4FAC081bf1f309aDC325306",
+        "keeperRegistry": "0x694AA1769357215DE4FAC081bf1f309aDC325306",
+        "cronUpKeepFactory": "0x694AA1769357215DE4FAC081bf1f309aDC325306"
+    }
+}
